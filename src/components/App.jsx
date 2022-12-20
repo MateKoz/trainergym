@@ -1,11 +1,9 @@
+import MainPage from "./navigation/MainPage";
 
 const App = () => {
     return (
-        <>
-       <div>Tujfskhdfjds</div>
-        </>
+            <MainPage/>
     )
-
 };
 
 export default App;
