@@ -7,7 +7,7 @@ import {BiMessageDetail} from "react-icons/bi";
 export const SidebarData = [
     {
         titles: 'Dashboard',
-        path: '/dashboard',
+        path: '/',
         icon: <MdHome/>,
     },
     {

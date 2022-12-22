@@ -1,9 +1,12 @@
 import MainPage from "./navigation/MainPage";
+import {BrowserRouter} from "react-router-dom";
 
 const App = () => {
     return (
-            <MainPage/>
-    )
+    <BrowserRouter>
+        <MainPage/>
+    </BrowserRouter>
+)
 };
 
 export default App;
