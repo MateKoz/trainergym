@@ -1,34 +1,32 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
 import Spinner from "../../components/common/Spinner";
-import {Suspense} from 'react'
+import { Suspense } from 'react'
 import {Breadcrumb} from "../../components/common/Breadcrumb";
-import Button from "../../components/common/Button";
-import {BsFillPersonPlusFill} from "react-icons/bs";
+import {NavLink} from "react-router-dom";
 
 const breadcrumbItems = [
     {
-        label: 'Clients',
+        label: 'Messages',
     },
 ]
 
-const ViewClients = () => {
+const ViewMessages = () => {
     return (
         <>
             <Helmet>
-                <title> Clients | Trainer App</title>
+                <title> Messages | Trainer App</title>
             </Helmet>
             <Suspense fallback={<Spinner/>}>
                 <Breadcrumb items={breadcrumbItems}>
                     <div className="flex items-center gap-1">
-                        <Button to={'/clients/add'} color='primary'><BsFillPersonPlusFill size={32}/>Add new
-                            client</Button>
+                        <NavLink to={'/'}>Click
+                        </NavLink>
                     </div>
                 </Breadcrumb>
             </Suspense>
         </>
-    )
-        ;
+    );
 };
 
-export default ViewClients;
+export default ViewMessages;

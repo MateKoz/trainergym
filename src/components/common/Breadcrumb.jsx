@@ -9,7 +9,7 @@ const BreadcrumbItem = ({ url, hasChevron, children }) => {
                 {url && (
                     <Link
                         to={url}
-                        className="ml-1 font-bold text-sm text-gray-700 hover:text-gray-900 md:mr-2 dark:text-gray-400 dark:hover:text-white">
+                        className="ml-1 font-bold text-sm text-gray-600 hover:text-gray-400 md:mr-2">
                         {children}
                     </Link>
                 )}
@@ -31,14 +31,14 @@ export const Breadcrumb = ({ items = [], children }) => {
         <>
             {title && (
                 <Helmet>
-                    <title>{title} | PM Tool</title>
+                    <title>{title} | Gym App</title>
                 </Helmet>
             )}
             <div className="flex justify-between items-center">
                 <nav className="flex flex-grow py-3 text-gray-700" aria-label="Breadcrumb">
                     <ol className="inline-flex items-center space-x-1 md:space-x-3">
                         {items.map(({ label, url }, i) => (
-                            <BreadcrumbItem key={label} url={url} hasChevron={i != items.length - 1}>
+                            <BreadcrumbItem key={label} url={url} hasChevron={i !== items.length - 1}>
                                 {label}
                             </BreadcrumbItem>
                         ))}
