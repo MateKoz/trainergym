@@ -1,10 +1,12 @@
+import MainPage from "./navigation/MainPage";
+import {BrowserRouter} from "react-router-dom";
 
 const App = () => {
     return (
-        <div className='text-green-300'>
-          Hello World
-        </div>
-    );
+    <BrowserRouter>
+        <MainPage/>
+    </BrowserRouter>
+)
 };
 
 export default App;
