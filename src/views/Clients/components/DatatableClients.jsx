@@ -1,14 +1,13 @@
 import React from 'react';
-import Card from "../../../components/common/Card";
+import {Datatable} from "../../../components/common/Datatable";
+import {headers} from "../data/HeadersTable";
 
 const DatatableClients = () => {
     return (
-        <>
-            <Card>
-                Table Clients
-            </Card>
-        </>
-    );
+        <Datatable headers={headers}>
+        </Datatable>
+
+);
 };
 
 export default DatatableClients;
