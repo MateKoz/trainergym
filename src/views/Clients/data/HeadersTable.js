@@ -1,14 +1,16 @@
 import {FiUser} from "react-icons/fi";
-import {GiBrain, GiMuscleUp,} from "react-icons/gi";
-import {FaUserTie,} from "react-icons/fa";
-import {BsFillPersonFill, BsBriefcase, BsHourglassBottom} from "react-icons/bs";
+import { GiPodiumWinner} from "react-icons/gi";
+import { BsHourglassBottom, BsHourglassTop, BsPersonBoundingBox} from "react-icons/bs";
+import {MdFoodBank} from "react-icons/md";
+import {FaPills} from "react-icons/fa";
+import {AiOutlineFileText} from "react-icons/ai";
 
-export  const headers = [
+export const headers = [
     {
         id: '1',
         label: (
             <>
-                <FiUser className="mr-1"/>
+                <FiUser size={18} className="mr-1 text-lime-600"/>
                 Name
             </>
         ),
@@ -19,7 +21,7 @@ export  const headers = [
         id: '2',
         label: (
             <>
-                <BsBriefcase className="mr-1"/>
+                <BsPersonBoundingBox size={18} className="mr-1 text-lime-600"/>
                 Surname
             </>
         ),
@@ -30,7 +32,7 @@ export  const headers = [
         id: '3',
         label: (
             <>
-                <BsHourglassBottom className="mr-1"/>
+                <BsHourglassBottom size={18} className="mr-1 text-lime-600"/>
                 Age
             </>
         ),
@@ -41,7 +43,7 @@ export  const headers = [
         id: '4',
         label: (
             <>
-                <GiBrain className="mr-1"/>
+                <BsHourglassTop size={18} className="mr-1 text-lime-600"/>
                 Start in
             </>
         ),
@@ -52,7 +54,7 @@ export  const headers = [
         id: '5',
         label: (
             <>
-                <GiMuscleUp className="mr-1"/>
+                <GiPodiumWinner size={18} className="mr-1 text-lime-600"/>
                 Target
             </>
         ),
@@ -63,7 +65,7 @@ export  const headers = [
         id: '6',
         label: (
             <>
-                <FaUserTie className="mr-1"/>
+                <MdFoodBank size={18} className="mr-1 text-lime-600"/>
                 Diet
             </>
         ),
@@ -75,8 +77,26 @@ export  const headers = [
         id: '7',
         label: (
             <>
-                <BsFillPersonFill className="mr-1"/>
+                <FaPills size={18} className="mr-1 text-lime-600"/>
                 Supplementation
+            </>
+        ),
+        colSize: 1,
+    },
+    {
+        id: '7',
+        label: (
+            <>
+                <AiOutlineFileText size={18} className="mr-1 text-lime-600"/>
+                Description
+            </>
+        ),
+        colSize: 1,
+    },
+    {
+        id: '8',
+        label: (
+            <>
             </>
         ),
         colSize: 1,

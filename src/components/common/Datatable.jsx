@@ -1,18 +1,20 @@
 
 export const Datatable = ({ children, headers }) => {
     const width = headers.reduce((acc, { colSize }) => acc + colSize, 0)
-    console.log(children?.length)
-    if (children?.length < 1) {
+
+    if (children?.length <= 0 || children?.length === 0) {
         return (
-            <div className="bg-white p-4 overflow-x-auto w-full dark:bg-gray-700 text-center dark:text-gray-300">
+            <div className="bg-white p-4 rounded-2xl border-2 border-green-300 overflow-x-auto w-full text-center">
                 No records to display
             </div>
         )
     }
+    console.log(children.length)
+
     return (
         <div className="bg-white p-4 rounded-xl overflow-x-auto w-full text-sm">
             <table className="bg-white rounded-xl max-w-full border-collapse w-full">
-                <thead className="hidden lg:table-header-group font-bold text-center border-b-2 border-green-200  text-gray-800">
+                <thead className="hidden lg:table-header-group font-bold text-center border-b-2 border-lime-200  text-lime-600">
                 <tr>
                     {headers.map(({ id, label, colSize }) => (
                         <th
