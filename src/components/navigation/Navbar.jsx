@@ -1,13 +1,18 @@
 import React from 'react';
-import {CgGym} from "react-icons/cg";
+import {GiWeightLiftingUp} from "react-icons/gi";
 
 const Navbar = () => {
     return (
         <>
-            <div className='bg-white h-35 w-full flex border-b-2 border-slate-600'>
-                <div className='flex m-5 items-center justify-start'>
-                    <CgGym className='text-black text-7xl mr-5'/>
-                    <p className='text-black font-semibold text-3xl'>Custom Trainer App</p>
+            <div className='bg-white h-30 w-full flex sticky top-0 border-b-2 border-lime-400'>
+                <div className='flex items-center justify-start'>
+                    <GiWeightLiftingUp className='text-lime-400 text-8xl m-2 font-bold'/>
+                    <div className='flex flex-col'>
+                        <span className='items-center font-bold text-lime-400 font-semibold text-xl'>Krystian
+                            Kochmański
+                            <p className='text-slate-400 ml-4'>Trener personalny</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </>

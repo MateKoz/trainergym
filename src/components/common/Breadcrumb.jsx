@@ -9,12 +9,12 @@ const BreadcrumbItem = ({ url, hasChevron, children }) => {
                 {url && (
                     <Link
                         to={url}
-                        className="ml-1 font-bold text-sm text-gray-600 hover:text-gray-400 md:mr-2">
+                        className="ml-1 font-bold text-sm text-gray-800 hover:text-gray-600 md:mr-2">
                         {children}
                     </Link>
                 )}
                 {!url && (
-                    <span className="ml-1 font-bold text-sm text-gray-500 md:mr-2 dark:text-gray-500">
+                    <span className="ml-1 font-bold text-sm text-gray-800 md:mr-2">
             {children}
           </span>
                 )}

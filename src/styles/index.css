@@ -13,3 +13,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-main-color {
+  background-color: #C3FC3C ;
+}
+
+
+.main-color {
+  color: #C3FC3C;
+}
+
+.lime {
+  color: #C3FC3C;
+}

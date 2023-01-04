@@ -7,12 +7,12 @@ const MainPage = () => {
     return (
         <>
             <Navbar/>
-            <div className='flex h-screen'>
-                <div className='bg-white h-max p-2 pr-10'>
-                    <Sidebar/>
-                </div>
-                <div className='w-full h-full bg-green-100 px-20 pt-5'>
-                    <RoutesPath/>
+            <div className='flex'>
+                <Sidebar/>
+                <div className='w-screen h-screen'>
+                    <div className='h-screen bg-slate-100 px-20 pt-5'>
+                        <RoutesPath/>
+                    </div>
                 </div>
             </div>
         </>
