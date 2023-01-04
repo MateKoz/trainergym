@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import {Clients as dataClients} from "../data/Clients";
-import {Link} from "react-router-dom";
 
 
 const AddClientsForm = () => {
-    const [data, setData] = useState(dataClients);
-    console.log(data)
+    const [data, setData] = useState([...dataClients]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -18,17 +16,20 @@ const AddClientsForm = () => {
             diet: e.target.diet.value,
             supplementation: e.target.supplementation.value,
         };
+        console.log(newData)
         setData([...data, newData]);
     };
+    console.log(data)
+    console.log(dataClients)
 
     return (
 
         <form onSubmit={handleSubmit}>
             <label htmlFor="name">Imię:</label>
-            <input type="text" id="name"/>
+            <input type="text" id="name" name='name'/>
             <br/>
             <label htmlFor="surname">Nazwisko:</label>
-            <input type="text" id="surname"/>
+            <input type="text" id="surname" name='surname'/>
             <br/>
             <label htmlFor="age">Wiek:</label>
             <input type="text" id="age"/>
@@ -56,9 +57,7 @@ const AddClientsForm = () => {
                 <option value="no">Nie</option>
             </select>
             <br/>
-            <Link to='/clients'>
                 <button type="submit">Dodaj</button>
-            </Link>
         </form>
     );
 };

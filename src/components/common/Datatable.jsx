@@ -9,7 +9,6 @@ export const Datatable = ({ children, headers }) => {
             </div>
         )
     }
-    console.log(children.length)
 
     return (
         <div className="bg-white p-4 overflow-x-auto shadow-md w-full text-sm">
