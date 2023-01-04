@@ -84,7 +84,7 @@ export const headers = [
         colSize: 1,
     },
     {
-        id: '7',
+        id: '8',
         label: (
             <>
                 <AiOutlineFileText size={18} className="mr-1 text-lime-600"/>
@@ -94,7 +94,7 @@ export const headers = [
         colSize: 1,
     },
     {
-        id: '8',
+        id: '9',
         label: (
             <>
             </>

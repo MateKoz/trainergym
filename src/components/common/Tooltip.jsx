@@ -1,12 +1,12 @@
-import { Tooltip as Tippy } from 'react-tippy'
+import { Tooltip as Tip } from 'react-tippy'
 import 'react-tippy/dist/tippy.css'
 
 const Tooltip = ({ value, children, className = '',  ...props }) => (
-    <Tippy title={value} duration={250} animateFill className={className}>
-        <div className={`flex`} {...props}>
+    <Tip title={value} duration={250} animateFill className={className}>
+        <div className={`flex justify-center`} {...props}>
             {children}
         </div>
-    </Tippy>
+    </Tip>
 )
 
 export default Tooltip

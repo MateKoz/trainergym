@@ -8,10 +8,10 @@ const Navbar = () => {
                 <div className='flex items-center justify-start'>
                     <GiWeightLiftingUp className='text-lime-400 text-8xl m-2 font-bold'/>
                     <div className='flex flex-col'>
-                        <p className='items-center font-bold text-lime-400 font-semibold text-xl'>Krystian
+                        <span className='items-center font-bold text-lime-400 font-semibold text-xl'>Krystian
                             Kochmański
                             <p className='text-slate-400 ml-4'>Trener personalny</p>
-                        </p>
+                        </span>
                     </div>
                 </div>
             </div>

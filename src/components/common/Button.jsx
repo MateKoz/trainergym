@@ -12,7 +12,7 @@ const Button = forwardRef(
                 : ''
         }
     ${size === 'normal' ? `md:text-base px-8 py-3` : size === 'small' ? `md:text-sm px-6 py-2 m-2` : ``}
-     flex items-center justify-center gap-4 rounded text-sm font-semibold text-center outline-none transition-all duration-150 ${className} 
+     flex items-center justify-center gap-4 shadow-md text-sm font-semibold text-center outline-none transition-all duration-150 ${className} 
      ${
             disabled
                 ? `text-gray-200 bg-gray-400 hover:bg-gray-400 hover:text-gray-200 active:bg-gray-400 active:text-gray-200 cursor-default`
