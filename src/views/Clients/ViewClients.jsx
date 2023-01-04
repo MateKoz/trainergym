@@ -4,7 +4,6 @@ import Spinner from "../../components/common/Spinner";
 import {Suspense} from 'react'
 import {Breadcrumb} from "../../components/common/Breadcrumb";
 import DatatableClients from "./components/DatatableClients";
-import AddClientsForm from "./components/AddClientsForm";
 
 const breadcrumbItems = [
     {
@@ -27,7 +26,6 @@ const ViewClients = () => {
 
                 </Breadcrumb>
                 <DatatableClients/>
-                {/*<AddClientsForm/>*/}
             </Suspense>
         </>
     )

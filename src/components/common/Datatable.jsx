@@ -22,7 +22,7 @@ export const Datatable = ({ children, headers }) => {
                             style={{
                                 width: `${Math.round((colSize / width) * 10000) / 100}%`,
                             }}>
-                            <div className='font-bold flex items-center gap-1'>
+                            <div className='font-bold flex items-center justify-center gap-1'>
                                 {label}
                             </div>
                         </th>

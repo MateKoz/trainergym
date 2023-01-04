@@ -3,7 +3,7 @@ const Card = ({ children, className, ...rest }) => {
         <div
             {...rest}
             className={
-                'bg-white mt-3 text-black rounded-xl p-4 shadow  ' + className
+                'bg-white mt-3 text-black p-4 shadow  ' + className
             }>
             {children}
         </div>
