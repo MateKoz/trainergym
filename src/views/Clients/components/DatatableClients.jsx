@@ -5,7 +5,7 @@ import {DatatableItem} from "../../../components/common/DatatableItem";
 import {Clients as data} from "../data/Clients";
 import {AiFillDelete} from "react-icons/ai";
 import Tooltip from "../../../components/common/Tooltip";
-import {BsChatLeftText, BsFillPersonPlusFill, BsPersonPlusFill} from "react-icons/bs";
+import { BsFillPersonPlusFill, BsPersonPlusFill} from "react-icons/bs";
 import toast from 'react-hot-toast';
 import Toast from "../../../components/common/Toast";
 import Button from "../../../components/common/Button";
@@ -18,6 +18,11 @@ const DatatableClients = () => {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
     const [age, setAge] = useState('');
+    const [startIn, setStartIn] = useState('');
+    const [target, setTarget] = useState('');
+    const [diet, setDiet] = useState('');
+    const [supplementation, setSupplementation] = useState('');
+    const [status, setStatus] = useState('');
 
     const removeClientHandler = (index) => {
         const currentClientList = [...dataItems];
@@ -29,7 +34,12 @@ const DatatableClients = () => {
     const newItem = {
         name: name,
         surname: surname,
-        age: age
+        age: age,
+        startIn: startIn,
+        target: target,
+        diet: diet,
+        supplementation: supplementation,
+        status: status,
     }
 
     const handleSubmit = (e) => {
@@ -50,9 +60,9 @@ const DatatableClients = () => {
             <div className="flex justify-end items-center w-full my-2">
                 {!modalOpen && (
                     <Button onClick={() => setModalOpen(true)}
-                        color='primary'>
-                    <BsFillPersonPlusFill size={20}/>Add new client
-                </Button>)
+                            color='primary'>
+                        <BsFillPersonPlusFill size={20}/>Add new client
+                    </Button>)
                 }
             </div>
             {modalOpen && (
@@ -71,18 +81,21 @@ const DatatableClients = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                            className=' bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
                                             value={name}
                                             onChange={(e) => setName(e.target.value)}/>
+
+
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='text-sm text-slate-400'>
                                             Nazwisko:
                                         </label>
                                         <input type="text"
-                                               className='bg-slate-100 p-1 border-2 border-lime-200'
+                                               className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                                value={surname}
+                                               placeholder={'Wprowadź nazwisko'}
                                                onChange={(e) => setSurname(e.target.value)}/>
                                     </div>
                                     <div className='flex flex-col'>
@@ -90,7 +103,8 @@ const DatatableClients = () => {
                                             Wiek:
                                         </label>
                                         <input type="number"
-                                               className='bg-slate-100 p-1 border-2 border-lime-200'
+                                               placeholder={'Wprowadź wiek'}
+                                               className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                                value={age}
                                                onChange={(e) => setAge(e.target.value)}/>
                                     </div>
@@ -100,10 +114,10 @@ const DatatableClients = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                            className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}/>
+                                            value={startIn}
+                                            onChange={(e) => setStartIn(e.target.value)}/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='text-sm text-slate-400'>
@@ -111,10 +125,10 @@ const DatatableClients = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                            className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}/>
+                                            value={target}
+                                            onChange={(e) => setTarget(e.target.value)}/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='text-sm text-slate-400'>
@@ -122,10 +136,10 @@ const DatatableClients = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                            className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}/>
+                                            value={diet}
+                                            onChange={(e) => setDiet(e.target.value)}/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='text-sm text-slate-400'>
@@ -133,23 +147,30 @@ const DatatableClients = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                            className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}/>
+                                            value={supplementation}
+                                            onChange={(e) => setSupplementation(e.target.value)}/>
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='text-sm text-slate-400'>
-                                            Opis:
+                                            Status:
                                         </label>
-                                        <textarea
-                                            className='bg-slate-100 p-1 border-2 border-lime-200'
+                                        <select
+                                            className='bg-slate-100 h-9 px-1 border-2 border-lime-200'
                                             placeholder={`Wprowadź imię`}
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}/>
+                                            value={status}
+                                            onChange={(e) => setStatus(e.target.options[e.target.selectedIndex].text)}>
+                                            <option className='p-1' value="active">Active</option>
+                                            <option value="finish">Finished</option>
+                                            <option value="freeze">Freeze</option>
+                                            <option value="waiting">Waiting</option>
+                                        </select>
                                     </div>
                                     <div className='flex gap-1'>
-                                        <Button className='bg-inherit text-black border-2 border-black hover:bg-slate-100' onClick={() => setModalOpen(false)}>Anuluj</Button>
+                                        <Button
+                                            className='bg-inherit text-black border-2 border-black hover:bg-slate-100'
+                                            onClick={() => setModalOpen(false)}>Anuluj</Button>
                                         <Button type="submit">Dodaj</Button>
                                     </div>
                                 </div>
@@ -171,7 +192,7 @@ const DatatableClients = () => {
                          target,
                          diet,
                          supplementation,
-                         description
+                         status
                      }, index) => (
                         <DatatableItem headers={headers} key={index}>
                             <div>{name}</div>
@@ -181,11 +202,7 @@ const DatatableClients = () => {
                             <div>{target}</div>
                             <div>{diet}</div>
                             <div>{supplementation}</div>
-                            <Tooltip
-                                value={description}
-                                className='cursor-pointer'>
-                                <BsChatLeftText className='text-slate-400 hover:text-black'/>
-                            </Tooltip>
+                            <div>{status}</div>
                             <Tooltip value={'Remove Client'}>
                                 <div className='cursor-pointer text-slate-300 hover:text-red-500'>
                                     <button onClick={() => removeClientHandler(index)}>

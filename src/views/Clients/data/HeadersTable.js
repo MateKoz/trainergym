@@ -88,7 +88,7 @@ export const headers = [
         label: (
             <>
                 <AiOutlineFileText size={18} className="mr-1 text-lime-600"/>
-                Description
+                Status
             </>
         ),
         colSize: 1,

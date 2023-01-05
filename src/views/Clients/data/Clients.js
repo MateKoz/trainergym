@@ -7,7 +7,7 @@ export const Clients = [
         target: 'Mr.Olympia',
         diet: 'bulking',
         supplementation: 'natty',
-        description: 'Example description'
+        status: 'Active'
     },
     {
         name: 'Ramon',
@@ -17,7 +17,7 @@ export const Clients = [
         target: 'Mr.Olympia',
         diet: 'cutting',
         supplementation: 'natty',
-        description: 'Example description 3131231'
+        status: 'Freeze'
 
 
     },
@@ -29,7 +29,7 @@ export const Clients = [
         target: 'Lose weight',
         diet: 'low kcal',
         supplementation: 'none',
-        description: 'Example description 1111111111111'
+        status: 'Waiting'
 
 
     },
@@ -41,7 +41,7 @@ export const Clients = [
         target: 'Mr.Olympia',
         diet: 'bulking',
         supplementation: 'natty',
-        description: 'Example description 22222222222222222'
+        status: 'Active'
 
 
     },
