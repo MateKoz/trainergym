@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Datatable} from "../../../components/common/Datatable";
 import {headers} from "../data/HeadersTable";
 import {DatatableItem} from "../../../components/common/DatatableItem";
-import {Clients as data} from "../data/Clients";
 import {AiFillMinusSquare} from "react-icons/ai";
 import Tooltip from "../../../components/common/Tooltip";
 import {BsFillPersonPlusFill, BsPersonPlusFill} from "react-icons/bs";
@@ -11,10 +10,11 @@ import Toast from "../../../components/common/Toast";
 import Button from "../../../components/common/Button";
 import Card from "../../../components/common/Card";
 import {RiEditBoxFill} from "react-icons/ri";
+import clientsList from "../data/clientsList";
 
 
 const DatatableClients = () => {
-    const [dataItems, setDataItems] = useState(data)
+    const [dataItems, setDataItems] = useState(clientsList)
     const [modalOpen, setModalOpen] = useState(false)
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
@@ -34,8 +34,6 @@ const DatatableClients = () => {
 
     const editClientHandler = (e, index) => {
         setModalOpen(true);
-        console.log(data[index]);
-        console.log(data[index].supplementation)
 
     }
 

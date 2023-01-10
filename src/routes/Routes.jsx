@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import ViewDashboard from "../views/Dashboard/ViewDashboard";
 import ViewClients from "../views/Clients/ViewClients";
-import ViewTable from "../views/Table/ViewTable";
+import ViewDiet from "../views/Diet/ViewDiet";
 import ViewSupplementation from "../views/Supplementation/ViewSupplementation";
 import ViewTrainings from "../views/Trainings/ViewTrainings";
 import ViewFinance from "../views/Finance/ViewFinance";
@@ -18,7 +18,7 @@ const RoutesPath = () => {
             <Routes>
                 <Route path='/' element={<ViewDashboard/>}/>
                 <Route path='/clients/' element={<ViewClients/>}/>
-                <Route path='/table' element={<ViewTable/>}/>
+                <Route path='/diet' element={<ViewDiet/>}/>
                 <Route path='/supplementation' element={<ViewSupplementation/>}/>
                 <Route path='/trainings' element={<ViewTrainings/>}/>
                 <Route path='/finance' element={<ViewFinance/>}/>

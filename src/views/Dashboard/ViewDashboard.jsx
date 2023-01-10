@@ -7,7 +7,7 @@ import {NavLink} from "react-router-dom";
 
 const breadcrumbItems = [
     {
-        label: 'Dashboard',
+        label: 'Strona Główna',
     },
 ]
 
@@ -15,7 +15,7 @@ const ViewDashboard = () => {
     return (
         <>
             <Helmet>
-                <title> Dashboard | Trainer App</title>
+                <title> Strona Główna | Trainer App</title>
             </Helmet>
             <Suspense fallback={<Spinner/>}>
                 <Breadcrumb items={breadcrumbItems}>

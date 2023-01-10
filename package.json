@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "axios": "^1.2.2",
     "formik": "^2.2.9",
     "react-hook-form": "^7.41.5",
     "react-tippy": "^1.4.0",

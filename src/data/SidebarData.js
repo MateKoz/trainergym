@@ -1,52 +1,52 @@
-import {BsFillPersonFill, BsTable} from "react-icons/bs";
+import {BsFillPersonFill} from "react-icons/bs";
 import {MdHome, MdOutlineAddAPhoto} from "react-icons/md";
 import {TbPills} from "react-icons/tb";
-import {GiGymBag, GiReceiveMoney, GiWeightLiftingUp} from "react-icons/gi";
+import {GiGymBag, GiMeal, GiReceiveMoney, GiWeightLiftingUp} from "react-icons/gi";
 import {BiMessageDetail} from "react-icons/bi";
 
 export const SidebarData = [
     {
-        titles: 'Dashboard',
+        titles: 'Strona Główna',
         path: '/',
         icon: <MdHome/>,
     },
     {
-        titles: 'Clients',
+        titles: 'Podopieczni',
         path: '/clients',
         icon: <BsFillPersonFill/>,
     },
     {
-        titles: 'Table',
-        path:'/table',
-        icon: <BsTable/>
+        titles: "Dieta",
+        path: '/diet',
+        icon: <GiMeal/>
     },
     {
-        titles: "Supplementation",
+        titles: "Suplementacja",
         path: '/supplementation',
         icon: <TbPills/>
     },
     {
-        titles: "Trainings",
+        titles: "Treningi",
         path: '/trainings',
         icon: <GiWeightLiftingUp/>
     },
     {
-        titles: "Finance",
+        titles: "Finanse",
         path: '/finance',
         icon: <GiReceiveMoney/>
     },
     {
-        titles: "Gallery",
+        titles: "Galeria",
         path: '/gallery',
         icon: <MdOutlineAddAPhoto/>
     },
     {
-        titles: "Messages",
+        titles: "Wiadomości",
         path: '/messages',
         icon: <BiMessageDetail/>
     },
     {
-        titles: "Equipment",
+        titles: "Sprzęt",
         path: '/equipment',
         icon: <GiGymBag/>
     },
