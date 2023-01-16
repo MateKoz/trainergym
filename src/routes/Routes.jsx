@@ -9,7 +9,7 @@ import ViewFinance from "../views/Finance/ViewFinance";
 import ViewEquipments from "../views/Equipments/ViewEquipments";
 import ViewGallery from "../views/Gallery/ViewGallery";
 import ViewMessages from "../views/Messages/ViewMessages";
-import ViewClientsFormAdd from "../views/Clients/ViewClientsFormAdd";
+// import ViewClientsFormAdd from "../views/Clients/ViewClientsFormAdd";
 
 
 const RoutesPath = () => {
@@ -26,7 +26,7 @@ const RoutesPath = () => {
                 <Route path='/gallery' element={<ViewGallery/>}/>
                 <Route path='/messages' element={<ViewMessages/>}/>
 
-                <Route path='/clients/add' element={<ViewClientsFormAdd/>}/>
+                {/*<Route path='/clients/add' element={<ViewClientsFormAdd/>}/>*/}
 
             </Routes>
         </>

@@ -8,7 +8,7 @@ const Button = forwardRef(
     ) => {
         const buttonStyles = `${
             color === 'primary'
-                ? `bg-emerald-600 hover:bg-emerald-800 focus:outline-none focus:ring focus:ring-green-600 text-white`
+                ? `bg-lime-700 hover:bg-lime-800 focus:outline-none focus:ring focus:ring-green-600 text-white`
                 : ''
         }
     ${size === 'normal' ? `md:text-base px-8 py-3` : size === 'small' ? `md:text-sm px-6 py-2` : ``}

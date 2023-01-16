@@ -11,13 +11,13 @@ export const Datatable = ({ children, headers }) => {
     }
 
     return (
-        <div className="bg-white p-4 overflow-x-auto shadow-md w-full text-sm">
-            <table className="bg-white  max-w-full  border-collapse w-full">
+        <div className="bg-white overflow-x-auto shadow-md w-full text-sm">
+            <table className="bg-white max-w-full  border-collapse w-full">
                 <thead className="hidden lg:table-header-group font-bold text-center border-b-2 border-lime-200 text-lime-600">
                 <tr>
                     {headers.map(({ id, label, colSize }) => (
                         <th
-                            className="px-4 py-2"
+                            className="px-5 py-5 bg-lime-200"
                             key={id}
                             style={{
                                 width: `${Math.round((colSize / width) * 10000) / 100}%`,

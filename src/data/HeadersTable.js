@@ -1,6 +1,6 @@
 import {FiUser} from "react-icons/fi";
 import { GiPodiumWinner} from "react-icons/gi";
-import { BsHourglassBottom, BsHourglassTop, BsPersonBoundingBox} from "react-icons/bs";
+import { BsHourglassBottom, BsHourglassTop} from "react-icons/bs";
 import {MdFoodBank} from "react-icons/md";
 import {FaPills} from "react-icons/fa";
 import {AiOutlineFileText} from "react-icons/ai";
@@ -12,17 +12,6 @@ export const headers = [
             <>
                 <FiUser size={18} className="mr-1 text-lime-600"/>
                 Name
-            </>
-        ),
-        colSize: 1,
-
-    },
-    {
-        id: '2',
-        label: (
-            <>
-                <BsPersonBoundingBox size={18} className="mr-1 text-lime-600"/>
-                Surname
             </>
         ),
         colSize: 1,
@@ -45,6 +34,17 @@ export const headers = [
             <>
                 <BsHourglassTop size={18} className="mr-1 text-lime-600"/>
                 Start in
+            </>
+        ),
+        colSize: 1,
+
+    },
+    {
+        id: '2',
+        label: (
+            <>
+                <BsHourglassTop size={18} className="mr-1 text-lime-600"/>
+                Interval
             </>
         ),
         colSize: 1,
@@ -78,7 +78,7 @@ export const headers = [
         label: (
             <>
                 <FaPills size={18} className="mr-1 text-lime-600"/>
-                Supplementation
+                Nutrition
             </>
         ),
         colSize: 1,
