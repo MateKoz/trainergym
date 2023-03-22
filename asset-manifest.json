@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trainergym/static/css/main.87fbe9c4.css",
+    "main.js": "/trainergym/static/js/main.54f9f67a.js",
+    "index.html": "/trainergym/index.html",
+    "main.87fbe9c4.css.map": "/trainergym/static/css/main.87fbe9c4.css.map",
+    "main.54f9f67a.js.map": "/trainergym/static/js/main.54f9f67a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87fbe9c4.css",
+    "static/js/main.54f9f67a.js"
+  ]
+}
