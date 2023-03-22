@@ -7,7 +7,7 @@ export const DatatableItem = ({ children, headers }) => {
                 children.map((child, i) => (
                     <td key={i} className='p-2 block lg:table-cell'>
                         <div  className="font-bold text-xs text-gray-600 lg:hidden flex items-center gap-1">
-                            {headers[i].label}
+                            {/*{headers[i].label}*/}
                         </div>
                         {child}
                     </td>

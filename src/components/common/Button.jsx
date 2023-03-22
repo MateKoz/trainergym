@@ -8,10 +8,10 @@ const Button = forwardRef(
     ) => {
         const buttonStyles = `${
             color === 'primary'
-                ? `bg-emerald-600 hover:bg-emerald-800 focus:outline-none focus:ring focus:ring-green-600 text-white`
+                ? `bg-lime-700 hover:bg-lime-800 focus:outline-none focus:ring focus:ring-green-600 text-white`
                 : ''
         }
-    ${size === 'normal' ? `md:text-base px-8 py-3` : size === 'small' ? `md:text-sm px-6 py-2 m-2` : ``}
+    ${size === 'normal' ? `md:text-base px-8 py-3` : size === 'small' ? `md:text-sm px-6 py-2` : ``}
      flex items-center justify-center gap-4 shadow-md text-sm font-semibold text-center outline-none transition-all duration-150 ${className} 
      ${
             disabled
